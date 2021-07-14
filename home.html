@@ -12,14 +12,12 @@
 
         <!-- Imported Styling -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-        <!-- Imported Scripts -->
     
         <!-- Custom Styling -->
         <link rel="stylesheet" href="style.css">
 
-        <!-- Custom Scripts -->
-
+        
+       
     </head>
 
     <body>
@@ -44,35 +42,95 @@
                         <li class="nav-item">
                             <a href="#" class="nav-link">About</a>
                         </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Tournaments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Leadership</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Resources</a>
+                        </li>
                     </ul>
                 </div>
             </div> 
         </nav>
 
+        <!-- Title -->
+
         <div class="hero-image">
-            <div class="hero-text">
-              <h1>WWP South Debate</h1>
-              <p> — High School South's Oldest Club — </p>
+            <div class="hero-text" id ="header">
+              <h1 class = "main-heading">WWP South Debate</h1>
+              <p class = "main-subtitle"> — High School South's Oldest Club — </p>
             </div>
         </div>
 
-        <div class = "container">
-            <p1>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel magna tellus. Aenean vehicula sem quis risus convallis, eget viverra odio placerat. Sed vel blandit orci. Aliquam id quam congue, feugiat nibh vitae, aliquet nisi. Quisque vestibulum arcu ut semper fringilla. Fusce sit amet tortor odio. Proin condimentum erat et quam tempor laoreet. Maecenas molestie fermentum congue. Mauris fringilla nibh vel neque consectetur tempus quis quis lacus. Vivamus eu elementum mi. Proin justo justo, condimentum quis accumsan vel, blandit et nibh. Nullam ultricies tellus nec velit posuere congue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
-            </p1>
-            <p1>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel magna tellus. Aenean vehicula sem quis risus convallis, eget viverra odio placerat. Sed vel blandit orci. Aliquam id quam congue, feugiat nibh vitae, aliquet nisi. Quisque vestibulum arcu ut semper fringilla. Fusce sit amet tortor odio. Proin condimentum erat et quam tempor laoreet. Maecenas molestie fermentum congue. Mauris fringilla nibh vel neque consectetur tempus quis quis lacus. Vivamus eu elementum mi. Proin justo justo, condimentum quis accumsan vel, blandit et nibh. Nullam ultricies tellus nec velit posuere congue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
-            </p1>
-            <p1>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel magna tellus. Aenean vehicula sem quis risus convallis, eget viverra odio placerat. Sed vel blandit orci. Aliquam id quam congue, feugiat nibh vitae, aliquet nisi. Quisque vestibulum arcu ut semper fringilla. Fusce sit amet tortor odio. Proin condimentum erat et quam tempor laoreet. Maecenas molestie fermentum congue. Mauris fringilla nibh vel neque consectetur tempus quis quis lacus. Vivamus eu elementum mi. Proin justo justo, condimentum quis accumsan vel, blandit et nibh. Nullam ultricies tellus nec velit posuere congue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
-            </p1>
-            <p1>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel magna tellus. Aenean vehicula sem quis risus convallis, eget viverra odio placerat. Sed vel blandit orci. Aliquam id quam congue, feugiat nibh vitae, aliquet nisi. Quisque vestibulum arcu ut semper fringilla. Fusce sit amet tortor odio. Proin condimentum erat et quam tempor laoreet. Maecenas molestie fermentum congue. Mauris fringilla nibh vel neque consectetur tempus quis quis lacus. Vivamus eu elementum mi. Proin justo justo, condimentum quis accumsan vel, blandit et nibh. Nullam ultricies tellus nec velit posuere congue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
-            </p1>
-        </div>
+        <!-- Bio -->
+
+        <section class="bg-light text-dark p-5 text-center">
+            <div class = "container-lg">
+                <h1>
+                   Who we are?
+               </h1>
+            </div>
+        </section>
+
+        <section class="bg-dark">
+               <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/GroupPictures/20222Officers.jpeg" class="mx-auto d-block w-100" style= "max-width: 1000" alt="First Slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/GroupPictures/Seniors.jpeg" class=" mx-auto d-block w-100"  style= "max-width: 1000" alt="Second Slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/GroupPictures/PMC.jpeg" class=" mx-auto d-block w-100"  style= "max-width: 1000 " alt="Third Slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/GroupPictures/Capitol.jpeg" class=" mx-auto d-block w-100"  style= "max-width: 1000" alt="Fourth Slide">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+         </section>
+         
+         <section class="bg-light text-dark p-5 text-center">
+           <div class = "container">
+               <p>    
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat in lectus quis venenatis. Sed tincidunt at ligula non sagittis. Praesent maximus finibus efficitur. Ut vehicula commodo quam a dignissim. Morbi iaculis arcu vel tellus molestie vestibulum. Nunc eget nisl sed neque viverra feugiat ac non dui. Morbi euismod rutrum magna. Nam et feugiat leo. Pellentesque iaculis ligula nec ex faucibus, a egestas nisl tristique. Etiam at elementum nulla, et ultricies nisl. In interdum libero ac ligula scelerisque imperdiet.
+                Nunc lobortis a dui non pulvinar. Suspendisse potenti. Quisque vitae quam in dolor aliquet rhoncus id sit amet magna. Vestibulum at ante nisl. Nam ac est et odio sollicitudin scelerisque ac et mi. Nulla augue diam, faucibus blandit arcu in, lobortis auctor enim. Donec lacinia et diam sit amet volutpat. Aliquam erat volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam fermentum risus in turpis dapibus, ut bibendum leo aliquam. Integer lacinia, ante sit amet dignissim maximus, nisl leo porttitor massa, at dapibus purus mauris sed mi. Aliquam augue est, tempor vel urna a, pellentesque sodales nibh. Nulla ipsum est, lobortis ut accumsan sed, ultricies nec metus.
+               </p>
+
+               <footer class = "text-muted pt-5">
+                    Interested? Contact us: 
+                    <a href="wwpsouthmocktrial@gmail.com">southdebate@gmail.com</a>
+               </footer>
+               
+            </div>
+        </section>
+      
 
 
     </body>
+    
+    <!-- Custom Scripts -->
+    <script src = "script.js"></script>
 
+    <!-- Imported Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </html>
