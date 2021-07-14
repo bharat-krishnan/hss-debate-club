@@ -23,13 +23,15 @@
     <body>
       
         <!-- Navigation Bar -->
-
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark "> 
+        <header>
+        <nav class="navbar fixed-top navbar-expand-lg"> 
          <div class="container"> 
                 <a href="#" class="navbar-brand">
-                    <img src = "images/DebateLogoWhiteMedium.png"  class="d-inline-block align-top" alt="" >
+                    <img src = "images/DebateLogoWhiteMedium.png" id ="logo" class="d-inline-block align-top" alt="" >
                 </a>
-                <button class="navbar-toggler" 
+                <button 
+                        id = "hamburger"
+                        class="navbar-toggler" 
                         type = "button" 
                         data-bs-toggle = "collapse"
                         data-bs-target= "#navmenu">
@@ -84,7 +86,7 @@
                 </div>
             </div> 
         </nav>
-
+        </header>
         <!-- Title -->
 
         <div class="hero-image">
@@ -153,7 +155,47 @@
             </div>
         </section>
       
+        <script>
+            window.addEventListener('scroll', function(){
+                let nav = document.querySelector('nav');
+                nav.classList.toggle('bg-light', window.scrollY > 150);
+                nav.classList.toggle('navbar-dark', window.scrollY <= 150 );
+                nav.classList.toggle('navbar-light', window.scrollY > 150);
+              
+                let logo = document.getElementById('logo');
+                if(window.scrollY <= 150)
+                  logo.src = 'images/DebateLogoWhiteMedium.png';
+                if(window.scrollY > 150)
+                  logo.src = 'images/DebateLogoMedium.png';
+               
+                let dropdowns = document.getElementsByClassName('dropdown-menu');
+                for(var i =0; i< dropdowns.length; i++){
+          
+                    dropdowns[i].classList.toggle('bg-transparent', window.scrollY <= 150 );
+                    dropdowns[i].classList.toggle('dropdown-menu-dark', window.scrollY <= 150 );
+                    dropdowns[i].classList.toggle('bg-light', window.scrollY > 150 );
+                    dropdowns[i].classList.toggle('dropdown-menu-light', window.scrollY > 150 );
+                }
+            })
 
+            let hamburger = document.getElementById('hamburger');
+            hamburger.addEventListener('click', function(){
+                let nav = document.querySelector('nav');
+                nav.classList.toggle('bg-light');
+                nav.classList.toggle('navbar-light');
+
+                let logo = document.getElementById('logo');
+                logo.src = 'images/DebateLogoMedium.png';
+                let dropdowns = document.getElementsByClassName('dropdown-menu');
+                for(var i =0; i< dropdowns.length; i++){
+                    dropdowns[i].classList.toggle('bg-light' );
+                    dropdowns[i].classList.toggle('dropdown-menu-light' );
+                }
+
+            })
+
+
+        </script>
 
     </body>
     
