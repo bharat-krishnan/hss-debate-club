@@ -19,7 +19,7 @@
 /* Place text in the middle of the image */
 .hero-text {
   text-align: center;
-  position:absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -29,3 +29,8 @@
 .main-heading{
   white-space: nowrap;
 }
+
+.main-subtitle{
+  white-space: nowrap;
+}
+
