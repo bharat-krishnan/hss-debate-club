@@ -178,22 +178,6 @@
                 }
             })
 
-            let hamburger = document.getElementById('hamburger');
-            hamburger.addEventListener('click', function(){
-                let nav = document.querySelector('nav');
-                nav.classList.toggle('bg-light');
-                nav.classList.toggle('navbar-light');
-
-                let logo = document.getElementById('logo');
-                logo.src = 'images/DebateLogoMedium.png';
-                let dropdowns = document.getElementsByClassName('dropdown-menu');
-                for(var i =0; i< dropdowns.length; i++){
-                    dropdowns[i].classList.toggle('bg-light' );
-                    dropdowns[i].classList.toggle('dropdown-menu-light' );
-                }
-
-            })
-
 
         </script>
 
