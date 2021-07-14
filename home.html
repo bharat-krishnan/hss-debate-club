@@ -24,7 +24,7 @@
       
         <!-- Navigation Bar -->
 
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark "> 
+        <nav class="navbar fixed-top navbar-expand-lg bg-transparent navbar-dark "> 
          <div class="container"> 
                 <a href="#" class="navbar-brand">
                     <img src = "images/DebateLogoWhiteMedium.png"  class="d-inline-block align-top" alt="" >
@@ -39,17 +39,46 @@
                         <li class="nav-item">
                             <a href="#" class="nav-link active">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">About</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              About
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark bg-transparent" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item " href="#">Overview</a></li>
+                              <li><a class="dropdown-item" href="#">History</a></li>
+                              <li><a class="dropdown-item" href="#">Awards</a></li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Tournaments</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Tournaments
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark bg-transparent" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Colonial Valley Conference</a></li>
+                              <li><a class="dropdown-item" href="#">Public Forum</a></li>
+                              <li><a class="dropdown-item" href="#">Princeton Moot Court</a></li>
+                              <li><a class="dropdown-item" href="#">Big Questions</a></li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Leadership</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Leadership
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark bg-transparent" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Officers</a></li>
+                              <li><a class="dropdown-item" href="#">Alumni</a></li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Resources</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Resources
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark bg-transparent" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Tabroom</a></li>
+                              <li><a class="dropdown-item" href="#">Examples</a></li>
+                              <li><a class="dropdown-item" href="#">Debate Bible</a></li>
+                              <li><a class="dropdown-item" href="#">Contact</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -65,7 +94,7 @@
             </div>
         </div>
 
-        <!-- Bio -->
+        <!-- Overview Header -->
 
         <section class="bg-light text-dark p-5 text-center">
             <div class = "container-lg">
@@ -75,6 +104,7 @@
             </div>
         </section>
 
+        <!-- Carousel -->
         <section class="bg-dark">
                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -127,10 +157,14 @@
 
     </body>
     
+    <!-- Imported Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
     <!-- Custom Scripts -->
     <script src = "script.js"></script>
 
-    <!-- Imported Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
 
 </html>
