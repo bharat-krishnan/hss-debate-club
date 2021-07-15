@@ -24,7 +24,7 @@
       
         <!-- Navigation Bar -->
         <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark"> 
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark" id = "mainNavbar"> 
          <div class="container"> 
                 <a href="#" class="navbar-brand">
                     <img src = "images/DebateLogoWhiteMedium.png" id ="logo" class="d-inline-block align-top" alt="" >
@@ -164,13 +164,7 @@
                 nav.classList.toggle('bg-light', window.scrollY > 150);
                 nav.classList.toggle('navbar-dark', window.scrollY <= 150 );
                 nav.classList.toggle('navbar-light', window.scrollY > 150);
-                
-                if(window.screen.width > 1200 && window.scrollY > 150)
-                    nav.classList.toggle('short');
-  
-              
-                
-              
+                nav.classList.toggle('short', window.scrollY > 150 && window.innerWidth > 1000);
 
                 let logo = document.getElementById('logo');
                 if(window.scrollY <= 150)
@@ -187,6 +181,15 @@
                     dropdowns[i].classList.toggle('dropsdown-menu-light', window.scrollY > 150 );
                 }
             })
+
+            document.getElementById('hamburger').addEventListener('click', function(){
+              let hamburger = document.getElementById('hamburger');
+              let nav = document.querySelector('nav');
+              if(hamburger.getAttribute('aria-expanded') == 'true'){
+                    nav.classList.toggle('bg-light');
+                    nav.classList.toggle('navbar-light');
+                }
+            } )
 
 
         </script>
