@@ -24,7 +24,7 @@
       
         <!-- Navigation Bar -->
         <header>
-        <nav class="navbar fixed-top navbar-expand-lg"> 
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark"> 
          <div class="container"> 
                 <a href="#" class="navbar-brand">
                     <img src = "images/DebateLogoWhiteMedium.png" id ="logo" class="d-inline-block align-top" alt="" >
@@ -46,7 +46,7 @@
                               About
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark bg-transparent" aria-labelledby="navbarDropdownMenuLink">
-                              <li><a class="dropdown-item " href="#">Overview</a></li>
+                              <li><a class="dropdown-item " href="#Overview">Overview</a></li>
                               <li><a class="dropdown-item" href="#">History</a></li>
                               <li><a class="dropdown-item" href="#">Awards</a></li>
                             </ul>
@@ -97,7 +97,7 @@
         </div>
 
         <!-- Overview Header -->
-
+        <div id = "Overview"> </div>
         <section class="bg-light text-dark p-5 text-center">
             <div class = "container-lg">
                 <h1>
@@ -105,9 +105,11 @@
                </h1>
             </div>
         </section>
+      
 
         <!-- Carousel -->
-        <section class="bg-dark">
+        <section class="bg-light">
+            <div >
                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -138,6 +140,7 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
+            </div>
          </section>
          
          <section class="bg-light text-dark p-5 text-center">
@@ -161,7 +164,14 @@
                 nav.classList.toggle('bg-light', window.scrollY > 150);
                 nav.classList.toggle('navbar-dark', window.scrollY <= 150 );
                 nav.classList.toggle('navbar-light', window.scrollY > 150);
+                
+                if(window.screen.width > 1200 && window.scrollY > 150)
+                    nav.classList.toggle('short');
+  
               
+                
+              
+
                 let logo = document.getElementById('logo');
                 if(window.scrollY <= 150)
                   logo.src = 'images/DebateLogoWhiteMedium.png';
@@ -174,7 +184,7 @@
                     dropdowns[i].classList.toggle('bg-transparent', window.scrollY <= 150 );
                     dropdowns[i].classList.toggle('dropdown-menu-dark', window.scrollY <= 150 );
                     dropdowns[i].classList.toggle('bg-light', window.scrollY > 150 );
-                    dropdowns[i].classList.toggle('dropdown-menu-light', window.scrollY > 150 );
+                    dropdowns[i].classList.toggle('dropsdown-menu-light', window.scrollY > 150 );
                 }
             })
 
