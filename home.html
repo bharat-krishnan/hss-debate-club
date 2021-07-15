@@ -24,7 +24,7 @@
       
         <!-- Navigation Bar -->
         <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark" id = "mainNavbar"> 
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark shadow" id = "mainNavbar"> 
          <div class="container"> 
                 <a href="#" class="navbar-brand">
                     <img src = "images/DebateLogoWhiteMedium.png" id ="logo" class="d-inline-block align-top" alt="" >
@@ -47,8 +47,8 @@
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark bg-transparent" aria-labelledby="navbarDropdownMenuLink">
                               <li><a class="dropdown-item " href="#Overview">Overview</a></li>
-                              <li><a class="dropdown-item" href="#">History</a></li>
-                              <li><a class="dropdown-item" href="#">Awards</a></li>
+                              <li><a class="dropdown-item" href="About/history.html">History</a></li>
+                              <li><a class="dropdown-item" href="About/awards.html">Awards</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -56,10 +56,10 @@
                               Tournaments
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark bg-transparent" aria-labelledby="navbarDropdownMenuLink">
-                              <li><a class="dropdown-item" href="#">Colonial Valley Conference</a></li>
-                              <li><a class="dropdown-item" href="#">Public Forum</a></li>
-                              <li><a class="dropdown-item" href="#">Princeton Moot Court</a></li>
-                              <li><a class="dropdown-item" href="#">Big Questions</a></li>
+                              <li><a class="dropdown-item" href="Tournaments/cvc.html">Colonial Valley Conference</a></li>
+                              <li><a class="dropdown-item" href="Tournaments/pf.html">Public Forum</a></li>
+                              <li><a class="dropdown-item" href="Tournaments/pmc.html">Princeton Moot Court</a></li>
+                              <li><a class="dropdown-item" href="Tournaments/bq.html">Big Questions</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -67,8 +67,8 @@
                               Leadership
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark bg-transparent" aria-labelledby="navbarDropdownMenuLink">
-                              <li><a class="dropdown-item" href="#">Officers</a></li>
-                              <li><a class="dropdown-item" href="#">Alumni</a></li>
+                              <li><a class="dropdown-item" href="Leadership/officers.html">Officers</a></li>
+                              <li><a class="dropdown-item" href="Leadership/alumni.html">Alumni</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -76,10 +76,10 @@
                               Resources
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark bg-transparent" aria-labelledby="navbarDropdownMenuLink">
-                              <li><a class="dropdown-item" href="#">Tabroom</a></li>
-                              <li><a class="dropdown-item" href="#">Examples</a></li>
-                              <li><a class="dropdown-item" href="#">Debate Bible</a></li>
-                              <li><a class="dropdown-item" href="#">Contact</a></li>
+                              <li><a class="dropdown-item" href="Resources/tabroom.html">Tabroom</a></li>
+                              <li><a class="dropdown-item" href="Resources/examples.html">Examples</a></li>
+                              <li><a class="dropdown-item" href="Resources/debatebible.html">Debate Bible</a></li>
+                              <li><a class="dropdown-item" href="Resources/contact.html">Contact</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -98,7 +98,7 @@
 
         <!-- Overview Header -->
         <div id = "Overview"> </div>
-        <section class="bg-light text-dark p-5 text-center">
+        <section class="bg-light text-dark p-5 text-center shadow">
             <div class = "container-lg">
                 <h1>
                    Who we are?
@@ -143,6 +143,7 @@
             </div>
          </section>
          
+         <!-- Description -->
          <section class="bg-light text-dark p-5 text-center">
            <div class = "container">
                <p>    
@@ -158,6 +159,8 @@
             </div>
         </section>
       
+        <!-- Navbar Script -->
+
         <script>
             window.addEventListener('scroll', function(){
                 let nav = document.querySelector('nav');

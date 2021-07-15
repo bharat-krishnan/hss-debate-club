@@ -1,0 +1,105 @@
+<html><!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        
+        <!-- Default Tags -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>South Debate</title>
+
+        <!-- Imported Styling -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+        <!-- Custom Styling -->
+        <link rel="stylesheet" href="../style.css">
+
+    </head>
+
+    <body>
+      
+        <!-- Navigation Bar -->
+
+        <header>
+            <nav class="navbar fixed-top navbar-expand-lg bg-light navbar-light" id = "mainNavbar"> 
+            <div class="container"> 
+                    <a href="#" class="navbar-brand">
+                        <img src = "../images/DebateLogoMedium.png" id ="logo" class="d-inline-block align-top" alt="" >
+                    </a>
+                    <button 
+                            id = "hamburger"
+                            class="navbar-toggler" 
+                            type = "button" 
+                            data-bs-toggle = "collapse"
+                            data-bs-target= "#navmenu">
+                            <span class="navbar-toggler-icon"></span> </button>
+                    <div class="collapse navbar-collapse container" id = "navmenu">
+                        <ul class ="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a href="../home.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                About
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-light bg-light" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item " href="../home.html#Overview">Overview</a></li>
+                                <li><a class="dropdown-item " href="../About/history.html">History</a></li>
+                                <li><a class="dropdown-item" href="../About/awards.html">Awards</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Tournaments
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-light bg-light" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item active" href= "#">Colonial Valley Conference</a></li>
+                                <li><a class="dropdown-item" href= "pf.html">Public Forum</a></li>
+                                <li><a class="dropdown-item" href= "pmc.html">Princeton Moot Court</a></li>
+                                <li><a class="dropdown-item" href= "bq.html">Big Questions</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Leadership
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-light bg-light" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="../Leadership/officers.html">Officers</a></li>
+                                <li><a class="dropdown-item" href="../Leadership/alumni.html">Alumni</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Resources
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-light bg-light" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="../Resources/tabroom.html">Tabroom</a></li>
+                                <li><a class="dropdown-item" href="../Resources/examples.html">Examples</a></li>
+                                <li><a class="dropdown-item" href="../Resources/debatebible.html">Debate Bible</a></li>
+                                <li><a class="dropdown-item" href="../Resources/contact.html">Contact</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div> 
+            </nav>
+        </header>
+      
+        <!-- Navbar Script -->
+
+        <script>
+                let nav = document.querySelector('nav');
+                nav.classList.toggle('short', window.innerWidth > 1000);
+        </script>
+
+    </body>
+    
+    <!-- Imported Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Custom Scripts -->
+    <script src = "../script.js"></script>
+
+</html>
