@@ -27,12 +27,40 @@
   color: white;
 }
 
+
+.header-image{
+ /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/ClioHallFixed3.jpg");
+
+ /* Set a specific height */
+ height: 40%; 
+
+ /* Position and center the image to scale nicely on all screens */
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ position: relative;
+}
+
+.header-text{
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 150% !important;
+}
+
 .main-heading{
   white-space: nowrap;
+  font-size:calc(20px + 4vw);
 }
 
 .main-subtitle{
   white-space: nowrap;
+  font-size:calc(10px + 1.25vw);
 }
 
 .shadow{
@@ -54,23 +82,77 @@ html { scroll-behavior: smooth; }
   content: '';
 }
 
-/*
-.carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
- }
- 
- .carousel-control-next-icon {
-   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
- }
- */
-
 .carousel-control-next,
 .carousel-control-prev /*, .carousel-indicators */ {
     filter: invert(100%);
 }
 
 .short{
-
   height: 5rem !important;
 }
 
+.dropdown-item.active,.dropdown-item:active{
+  background-color:  #57A44D !important;
+}
+
+.footer{
+  color: #E5F6DF;
+
+}
+
+.footer-link{
+  color: #FCD733 !important;
+}
+/*  All Color Schemes*/
+
+.bg-secondary{
+  background-color:  #F5F5F4 !important;
+}
+
+.bg-bannanaYellow{
+  background-color: #FCD733;
+}
+
+.bg-corn{
+    background-color: #FFE85C;
+
+}
+
+.bg-apple{
+    background-color: #57A44D;
+}
+
+.bg-iguanaGreen{
+  background-color:  #57A44D !important;
+  color: white !important ;
+
+}
+.bg-lightGreen{
+  background-color:  #99EE99;
+}
+
+.bg-teaGreen{
+  background-color: #C7F6B6;
+}
+
+.bg-paleSpringBud{
+  background-color:  #E2FAB5;
+}
+
+.bg-cream{
+  background-color: #FFFCD1
+}
+
+.bg-veryPaleYellow{
+  background-color: #FFF9C2;
+}
+
+.bg-testGreen{
+
+  background-color: #7DB46CFF;
+  color: white !important ;
+}
+
+.bg-nyanza{
+   background-color: #E5F6DF;
+}

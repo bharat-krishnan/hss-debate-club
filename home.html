@@ -24,7 +24,7 @@
       
         <!-- Navigation Bar -->
         <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark shadow" id = "mainNavbar"> 
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark" id = "mainNavbar"> 
          <div class="container"> 
                 <a href="#" class="navbar-brand">
                     <img src = "images/DebateLogoWhiteMedium.png" id ="logo" class="d-inline-block align-top" alt="" >
@@ -33,6 +33,7 @@
                         id = "hamburger"
                         class="navbar-toggler" 
                         type = "button" 
+                        onclick = "myFunction()"
                         data-bs-toggle = "collapse"
                         data-bs-target= "#navmenu">
                         <span class="navbar-toggler-icon"></span> </button>
@@ -46,7 +47,7 @@
                               About
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark bg-transparent" aria-labelledby="navbarDropdownMenuLink">
-                              <li><a class="dropdown-item " href="#Overview">Overview</a></li>
+                              <li><a class="dropdown-item " id = "overview" href="#Overview">Overview</a></li>
                               <li><a class="dropdown-item" href="About/history.html">History</a></li>
                               <li><a class="dropdown-item" href="About/awards.html">Awards</a></li>
                             </ul>
@@ -87,28 +88,67 @@
             </div> 
         </nav>
         </header>
-        <!-- Title -->
 
+        <!-- Title -->
         <div class="hero-image">
             <div class="hero-text" id ="header">
-              <h1 class = "main-heading">WWP South Debate</h1>
-              <p class = "main-subtitle"> — High School South's Oldest Club — </p>
+              <h1 class = "main-heading">WWP SOUTH DEBATE</h1>
+              <p class = "main-subtitle"> —— High School South's Oldest Club —— </p>
             </div>
         </div>
 
+        <!-- Extended Gap -->
+        <section id = "Overview" class="bg-testGreen text-dark py-4 text-center">
+          <div class = "container-lg">
+            <h1>
+            <!--  ________________________---> 
+            </h1>
+          </div>
+        </section>
+
         <!-- Overview Header -->
-        <div id = "Overview"> </div>
-        <section class="bg-light text-dark p-5 text-center shadow">
-            <div class = "container-lg">
-                <h1>
-                   Who we are?
-               </h1>
+        <section  class="bg-testGreen text-dark p-5 text-center">
+          <div class = "container-lg">
+              <h1>
+                 Who we are?
+             </h1>
+          </div>
+        </section>
+
+
+         <!-- Description -->
+         <section class="bg-testGreen pb-5 px-3 text-center">
+           <div class = "container">
+               <p>    
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat in lectus quis venenatis. Sed tincidunt at ligula non sagittis. Praesent maximus finibus efficitur. Ut vehicula commodo quam a dignissim. Morbi iaculis arcu vel tellus molestie vestibulum. Nunc eget nisl sed neque viverra feugiat ac non dui. Morbi euismod rutrum magna. Nam et feugiat leo. Pellentesque iaculis ligula nec ex faucibus, a egestas nisl tristique. Etiam at elementum nulla, et ultricies nisl. In interdum libero ac ligula scelerisque imperdiet.
+                Nunc lobortis a dui non pulvinar. Suspendisse potenti. Quisque vitae quam in dolor aliquet rhoncus id sit amet magna. Vestibulum at ante nisl. Nam ac est et odio sollicitudin scelerisque ac et mi. Nulla augue diam, faucibus blandit arcu in, lobortis auctor enim. Donec lacinia et diam sit amet volutpat. Aliquam erat volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam fermentum risus in turpis dapibus, ut bibendum leo aliquam. Integer lacinia, ante sit amet dignissim maximus, nisl leo porttitor massa, at dapibus purus mauris sed mi. Aliquam augue est, tempor vel urna a, pellentesque sodales nibh. Nulla ipsum est, lobortis ut accumsan sed, ultricies nec metus.
+               </p>
             </div>
         </section>
-      
 
-        <!-- Carousel -->
-        <section class="bg-light">
+        <!-- Footer -->
+         <section class = "cointainer bg-testGreen pb-5 px-5 text-center">
+            <footer class = "footer">
+              Interested? Contact us: 
+              <a class = "footer-link" href="wwpsouthmocktrial@gmail.com">southdebate@gmail.com</a>
+              
+            </footer>
+          </footer>
+         </section>
+
+          <!-- Extended Gap -->
+          <section id = "Overview" class="bg-testGreen text-dark py-4 text-center">
+            <div class = "container-lg">
+              <h1>
+                <!--  ________________________---> 
+                </h1>
+            </div>
+          </section>
+
+
+         <!-- Carousel
+
+        <section class="bg-nyanza">
             <div >
                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -142,30 +182,40 @@
               </div>
             </div>
          </section>
-         
-         <!-- Description -->
-         <section class="bg-light text-dark p-5 text-center">
-           <div class = "container">
-               <p>    
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat in lectus quis venenatis. Sed tincidunt at ligula non sagittis. Praesent maximus finibus efficitur. Ut vehicula commodo quam a dignissim. Morbi iaculis arcu vel tellus molestie vestibulum. Nunc eget nisl sed neque viverra feugiat ac non dui. Morbi euismod rutrum magna. Nam et feugiat leo. Pellentesque iaculis ligula nec ex faucibus, a egestas nisl tristique. Etiam at elementum nulla, et ultricies nisl. In interdum libero ac ligula scelerisque imperdiet.
-                Nunc lobortis a dui non pulvinar. Suspendisse potenti. Quisque vitae quam in dolor aliquet rhoncus id sit amet magna. Vestibulum at ante nisl. Nam ac est et odio sollicitudin scelerisque ac et mi. Nulla augue diam, faucibus blandit arcu in, lobortis auctor enim. Donec lacinia et diam sit amet volutpat. Aliquam erat volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam fermentum risus in turpis dapibus, ut bibendum leo aliquam. Integer lacinia, ante sit amet dignissim maximus, nisl leo porttitor massa, at dapibus purus mauris sed mi. Aliquam augue est, tempor vel urna a, pellentesque sodales nibh. Nulla ipsum est, lobortis ut accumsan sed, ultricies nec metus.
-               </p>
+          -->
 
-               <footer class = "text-muted pt-5">
-                    Interested? Contact us: 
-                    <a href="wwpsouthmocktrial@gmail.com">southdebate@gmail.com</a>
-               </footer>
-               
-            </div>
-        </section>
-      
+
         <!-- Navbar Script -->
 
         <script>
+
+              var inc=0;
+
+              function myFunction() {
+                  inc=inc+1;  
+              }
+
             window.addEventListener('scroll', function(){
+
+              let hamburger = document.getElementById('hamburger');
+              let overview = document.getElementById('overview');
+
+              if(window.scrollY>400){
+                overview.classList.add('active');
+              }
+              
+              if(window.scrollY<=400){
+                overview.classList.remove('active');
+              }
+
+              if(inc%2 ==0){
                 let nav = document.querySelector('nav');
+               
+
                 nav.classList.toggle('bg-light', window.scrollY > 150);
-                nav.classList.toggle('navbar-dark', window.scrollY <= 150 );
+
+                  nav.classList.toggle('navbar-dark', window.scrollY <= 150 );
+
                 nav.classList.toggle('navbar-light', window.scrollY > 150);
                 nav.classList.toggle('short', window.scrollY > 150 && window.innerWidth > 1000);
 
@@ -183,16 +233,42 @@
                     dropdowns[i].classList.toggle('bg-light', window.scrollY > 150 );
                     dropdowns[i].classList.toggle('dropsdown-menu-light', window.scrollY > 150 );
                 }
+
+              }
             })
 
-            document.getElementById('hamburger').addEventListener('click', function(){
+           document.getElementById('hamburger').addEventListener('click', function(){
+             
               let hamburger = document.getElementById('hamburger');
               let nav = document.querySelector('nav');
-              if(hamburger.getAttribute('aria-expanded') == 'true'){
+              let logo = document.getElementById('logo');
+              let dropdowns = document.getElementsByClassName('dropdown-menu');
+
+              
+              if (window.scrollY < 150){
+
+                    for(var i =0; i< dropdowns.length; i++){
+                          dropdowns[i].classList.toggle('bg-transparent');
+                          dropdowns[i].classList.toggle('dropdown-menu-dark');
+                          dropdowns[i].classList.toggle('bg-light');
+                          dropdowns[i].classList.toggle('dropdown-menu-light');
+                    }
+                    
                     nav.classList.toggle('bg-light');
+                    nav.classList.toggle('navbar-dark');
                     nav.classList.toggle('navbar-light');
-                }
-            } )
+                    
+                    if(inc %2 !==0)
+                      logo.src = 'images/DebateLogoMedium.png';
+                    else 
+                      logo.src = 'images/DebateLogoWhiteMedium.png';
+              }
+            })
+
+            
+
+
+
 
 
         </script>
