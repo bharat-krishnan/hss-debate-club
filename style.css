@@ -247,3 +247,9 @@ html { scroll-behavior: smooth; }
 .bg-nyanza{
    background-color: #E5F6DF !important;
 }
+
+.bg-testGreenWithBlackText{
+
+  background-color: #7DB46CFF;
+  color: black !important ;
+}
