@@ -1,6 +1,7 @@
 
 
-/* The hero image */
+/* HERO STYLING */
+
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/ClioHallFixed3.jpg");
@@ -17,7 +18,6 @@
 }
 
 /* Place text in the middle of the image */
-
 .hero-text {
   text-align: center;
   position: absolute;
@@ -25,22 +25,63 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+
 }
 
+/* Fade In Animation */
+#HeroHeading h1{
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 2s; /* Firefox < 16 */
+      -ms-animation: fadein 2s; /* Internet Explorer */
+       -o-animation: fadein 2s; /* Opera < 12.1 */
+          animation: fadein 2s;
+}
 
-.header-image{
- /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
- background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/ClioHallFixed3.jpg");
+#HeroHeading p{
+  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 4s; /* Firefox < 16 */
+      -ms-animation: fadein 4s; /* Internet Explorer */
+       -o-animation: fadein 4s; /* Opera < 12.1 */
+          animation: fadein 4s;
+}
 
- /* Set a specific height */
- height: 40%; 
+#header h1{
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 2s; /* Firefox < 16 */
+      -ms-animation: fadein 2s; /* Internet Explorer */
+       -o-animation: fadein 2s; /* Opera < 12.1 */
+          animation: fadein 2s;
+}
 
- /* Position and center the image to scale nicely on all screens */
- background-attachment: fixed;
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
- position: relative;
+#header p{
+  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 4s; /* Firefox < 16 */
+      -ms-animation: fadein 4s; /* Internet Explorer */
+       -o-animation: fadein 4s; /* Opera < 12.1 */
+          animation: fadein 4s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 .header-text{
@@ -53,6 +94,39 @@
   font-size: 150% !important;
 }
 
+
+/*HEADER IMAGES*/
+
+.history-image{
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/ClioHallFixed3.jpg");
+  /* Set a specific height */
+  height: 40%; 
+  /* Position and center the image to scale nicely on all screens */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+ }
+
+ /*^HEADER IMAGES*/
+
+ .awards-image{
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/ClioHallFixed3.jpg");
+  /* Set a specific height */
+  height: 40%; 
+  /* Position and center the image to scale nicely on all screens */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+ }
+
+ /*Custom Formatting*/
+
 .main-heading{
   white-space: nowrap;
   font-size:calc(20px + 4vw);
@@ -61,6 +135,23 @@
 .main-subtitle{
   white-space: nowrap;
   font-size:calc(10px + 1.25vw);
+}
+
+.tournament-headers{
+  font-size: calc(40px + 3vw);
+}
+
+.tournament-subtitles{
+  font-size: 25px;
+}
+
+.award-headers{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.awards{
+  font-size: 10pt;
 }
 
 .shadow{
@@ -97,13 +188,13 @@ html { scroll-behavior: smooth; }
 
 .footer{
   color: #E5F6DF;
-
 }
 
 .footer-link{
   color: #FCD733 !important;
 }
-/*  All Color Schemes*/
+
+/*COLOR SCHEMES*/
 
 .bg-secondary{
   background-color:  #F5F5F4 !important;
@@ -154,5 +245,5 @@ html { scroll-behavior: smooth; }
 }
 
 .bg-nyanza{
-   background-color: #E5F6DF;
+   background-color: #E5F6DF !important;
 }
