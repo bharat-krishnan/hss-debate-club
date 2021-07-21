@@ -1,246 +1,294 @@
-<html><!DOCTYPE html>
+<html>
+<!DOCTYPE html>
 
 <html lang="en">
 
-    <head>
-        
-        <!-- Default Tags -->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>South Debate</title>
+<head>
 
-        <!-- Imported Styling -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
-        <!-- Custom Styling -->
-        <link rel="stylesheet" href="../style.css">
+    <!-- Default Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South Debate</title>
 
-         <!--Imported Scripts -->
-         <script src="https://kit.fontawesome.com/f2541bbe59.js" crossorigin="anonymous"></script>
+    <!-- Imported Styling -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    </head>
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="../style.css">
 
-    <body>
-      
-        <!-- Navigation Bar -->
+    <!--Imported Scripts -->
+    <script src="https://kit.fontawesome.com/f2541bbe59.js" crossorigin="anonymous"></script>
 
-        <header>
-            <nav class="navbar fixed-top navbar-expand-lg bg-light navbar-light" id = "mainNavbar"> 
-            <div class="container"> 
-                    <a href="#" class="navbar-brand">
-                        <img src = "../images/DebateLogoMedium.png" id ="logo" class="d-inline-block align-top" alt="" >
-                    </a>
-                    <button 
-                            id = "hamburger"
-                            class="navbar-toggler" 
-                            type = "button" 
-                            data-bs-toggle = "collapse"
-                            data-bs-target= "#navmenu">
-                            <span class="navbar-toggler-icon"></span> </button>
-                    <div class="collapse navbar-collapse container" id = "navmenu">
-                        <ul class ="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a href="../home.html" class="nav-link">Home</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg bg-light navbar-light" id="mainNavbar">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <img src="../images/DebateLogoMedium.png" id="logo" class="d-inline-block align-top" alt="">
+                </a>
+                <button id="hamburger" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span> </button>
+                <div class="collapse navbar-collapse container" id="navmenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="../home.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 About
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-light bg-light" aria-labelledby="navbarDropdownMenuLink">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-light bg-light"
+                                aria-labelledby="navbarDropdownMenuLink">
                                 <li><a class="dropdown-item " href="../home.html#Overview">Overview</a></li>
                                 <li><a class="dropdown-item " href="../About/history.html">History</a></li>
                                 <li><a class="dropdown-item" href="../About/awards.html">Awards</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Tournaments
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-light bg-light" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="../Tournaments/cvc.html">Colonial Valley Conference</a></li>
-                                <li><a class="dropdown-item" href= "../Tournaments/pf.html">Public Forum</a></li>
-                                <li><a class="dropdown-item" href="../Tournaments/pmc.html">Princeton Moot Court</a></li>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-light bg-light"
+                                aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="../Tournaments/cvc.html">Colonial Valley
+                                        Conference</a></li>
+                                <li><a class="dropdown-item" href="../Tournaments/pf.html">Public Forum</a></li>
+                                <li><a class="dropdown-item" href="../Tournaments/pmc.html">Princeton Moot Court</a>
+                                </li>
                                 <li><a class="dropdown-item" href="../Tournaments/bq.html">Big Questions</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Leadership
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-light bg-light" aria-labelledby="navbarDropdownMenuLink">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-light bg-light"
+                                aria-labelledby="navbarDropdownMenuLink">
                                 <li><a class="dropdown-item" href="officers.html">Officers</a></li>
                                 <li><a class="dropdown-item active" href="#">Alumni</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Resources
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-light bg-light" aria-labelledby="navbarDropdownMenuLink">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-light bg-light"
+                                aria-labelledby="navbarDropdownMenuLink">
                                 <li><a class="dropdown-item" href="../Resources/tabroom.html">Tabroom</a></li>
                                 <li><a class="dropdown-item" href="../Resources/examples.html">Examples</a></li>
                                 <li><a class="dropdown-item" href="../Resources/debatebible.html">Debate Bible</a></li>
                                 <li><a class="dropdown-item" href="../Resources/contact.html">Contact</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div> 
-            </nav>
-        </header>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-            <!--Header -->
-            <div class="awards-image">
-                <div class="header-text" id ="header">
-                  <h1 class = "main-heading">Alumni</h1>
-                  <p class = "main-subtitle">— Past Members — </p>
+    <!--Header -->
+    <div class="alumni-image">
+        <div class="header-text" id="header">
+            <h1 class="main-heading">Alumni</h1>
+            <p class="main-subtitle">— Past Members — </p>
+        </div>
+    </div>
+
+    <!-- Mr.Levnsion Tribute -->
+    <section class="bg-testGreen p-5 px-3">
+        <div class="container">
+            <div class="row gy-5 align-items-center">
+                <div class="p-4 col-lg-2">
+                    <img style="max-height: 500px" src="../images/Officers/Levinson.jpeg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-10">
+                    <h1 class="px-4">
+                        Mr.Levinson
+                    </h1>
+                    <p class="p-4">
+                        
+Mr.Levinson is a World History teacher at WWP High School South and was South Debate Club’s previous advisor.  He served as the advisor for over 10 years and helped the club grow in immeasurable ways.  Under his guidance, South received more national and regional awards than at any other point in its history.  He also helped introduce multiple new competing formats including Public Forum, now South’s main debate format, and Big Questions, South’s fundraising tournament.  Mr.Levinson was an integral part of the team and his guidance and mentoring will truly be missed.
+
+                    </p>
                 </div>
             </div>
 
-             <!-- Mr.Levnsion Tribute -->
-             <section class="bg-testGreen p-5 px-3">
-                <div class = "container">
-                    <div class="row gy-5 align-items-center">
-                        <div class="col-lg-2">
-                            <img style = "max-height: 500px" src="../images/ExampleOfficer.jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-lg-10">
-                            <h1 class ="px-4">
-                                Mr.Levinson
-                            </h1>
-                            <p class ="p-4">    
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat in lectus quis venenatis. Sed tincidunt at ligula non sagittis. Praesent maximus finibus efficitur. Ut vehicula commodo quam a dignissim. Morbi iaculis arcu vel tellus molestie vestibulum. Nunc eget nisl sed neque viverra feugiat ac non dui. Morbi euismod rutrum magna. Nam et feugiat leo. Pellentesque iaculis ligula nec ex faucibus, a egestas nisl tristique. Etiam at elementum nulla, et ultricies nisl. In interdum libero ac ligula scelerisque imperdiet.
-                            Nunc lobortis a dui non pulvinar. 
-                            </p>
-                        </div>
-                    </div>
+        </div>
+    </section>
 
+
+    <!-- Student Alumni-->
+    <section class="bg-secondary p-5 px-3 text-center">
+        <div class="container">
+            <h1 class="pb-3">
+                Student Alumni
+            </h1>
+            <div class="row pt-5 gy-5 align-items-center">
+                <div class="col-lg-3">
+                    <ul class="list-group list-group-flush ">
+                        <li class="list-group-item  bg-secondary award-headers">2021</li>
+                        <li class="list-group-item  bg-secondary awards">Bharat Krishnan*</li>
+                        <li class="list-group-item  bg-secondary awards">Carol Sun*</li>
+                        <li class="list-group-item  bg-secondary awards">Vineet Chovatia</li>
+                        <li class="list-group-item  bg-secondary awards">Deepti Athreya</li>
+                        <li class="list-group-item  bg-secondary awards">Jai Narayanan</li>
+                        <li class="list-group-item  bg-secondary awards">Vishnu Anandraj</li>
+                        <li class="list-group-item  bg-secondary awards">Samvit Agarwal</li>
+                        <li class="list-group-item  bg-secondary awards">Rishi Madala</li>
+                        <li class="list-group-item  bg-secondary awards">Anson Aerath</li>
+                    </ul>
                 </div>
-            </section>
-           
-
-            <!-- Student Alumni-->
-            <section class="bg-secondary p-5 px-3 text-center">
-                <div class = "container">
-                    <h1 class = "pb-3">
-                        Student Alumni
-                    </h1>
-                    <div class="row pt-5 gy-5 align-items-center">
-                        <div class = "col-lg-3">
-                            <ul class="list-group list-group-flush ">
-                                <li class="list-group-item  bg-secondary award-headers">2021</li>
-                                <li class="list-group-item  bg-secondary awards">Cras justo odio</li>
-                                <li class="list-group-item  bg-secondary awards">Dapibus ac facilisis in</li>
-                                <li class="list-group-item  bg-secondary awards">Morbi leo risus</li>
-                                <li class="list-group-item  bg-secondary awards">Porta ac consectetur ac</li>
-                                <li class="list-group-item  bg-secondary awards">Vestibulum at eros</li>
-                              </ul>
-                        </div>
-                        <div class = "col-lg-3">
-                            <ul class="list-group list-group-flush ">
-                                <li class="list-group-item  bg-secondary award-headers">2020</li>
-                                <li class="list-group-item  bg-secondary awards">Cras justo odio</li>
-                                <li class="list-group-item  bg-secondary awards">Dapibus ac facilisis in</li>
-                                <li class="list-group-item  bg-secondary awards">Morbi leo risus</li>
-                                <li class="list-group-item  bg-secondary awards">Porta ac consectetur ac</li>
-                                <li class="list-group-item  bg-secondary awards">Vestibulum at eros</li>
-                              </ul>
-                        </div>
-                        <div class = "col-lg-3">
-                            <ul class="list-group list-group-flush ">
-                                <li class="list-group-item  bg-secondary award-headers">2019</li>
-                                <li class="list-group-item  bg-secondary awards">Cras justo odio</li>
-                                <li class="list-group-item  bg-secondary awards">Dapibus ac facilisis in</li>
-                                <li class="list-group-item  bg-secondary awards">Morbi leo risus</li>
-                                <li class="list-group-item  bg-secondary awards">Porta ac consectetur ac</li>
-                                <li class="list-group-item  bg-secondary awards">Vestibulum at eros</li>
-                              </ul>
-                        </div>
-                        <div class = "col-lg-3">
-                            <ul class="list-group list-group-flush ">
-                                <li class="list-group-item  bg-secondary award-headers">2018</li>
-                                <li class="list-group-item  bg-secondary awards">Cras justo odio</li>
-                                <li class="list-group-item  bg-secondary awards">Dapibus ac facilisis in</li>
-                                <li class="list-group-item  bg-secondary awards">Morbi leo risus</li>
-                                <li class="list-group-item  bg-secondary awards">Porta ac consectetur ac</li>
-                                <li class="list-group-item  bg-secondary awards">Vestibulum at eros</li>
-                              </ul>
-                        </div>
-                        
-                    </div>
-                    <div class="row py-5 gy-5 align-items-center">
-                        <div class = "col-lg-3">
-                            <ul class="list-group list-group-flush ">
-                                <li class="list-group-item  bg-secondary award-headers">2017</li>
-                                <li class="list-group-item  bg-secondary awards">Cras justo odio</li>
-                                <li class="list-group-item  bg-secondary awards">Dapibus ac facilisis in</li>
-                                <li class="list-group-item  bg-secondary awards">Morbi leo risus</li>
-                                <li class="list-group-item  bg-secondary awards">Porta ac consectetur ac</li>
-                                <li class="list-group-item  bg-secondary awards">Vestibulum at eros</li>
-                              </ul>
-                        </div>
-                        <div class = "col-lg-3">
-                            <ul class="list-group list-group-flush ">
-                                <li class="list-group-item  bg-secondary award-headers">2016</li>
-                                <li class="list-group-item  bg-secondary awards">Cras justo odio</li>
-                                <li class="list-group-item  bg-secondary awards">Dapibus ac facilisis in</li>
-                                <li class="list-group-item  bg-secondary awards">Morbi leo risus</li>
-                                <li class="list-group-item  bg-secondary awards">Porta ac consectetur ac</li>
-                                <li class="list-group-item  bg-secondary awards">Vestibulum at eros</li>
-                              </ul>
-                        </div>
-                        <div class = "col-lg-3">
-                            <ul class="list-group list-group-flush ">
-                                <li class="list-group-item  bg-secondary award-headers">2015</li>
-                                <li class="list-group-item  bg-secondary awards">Cras justo odio</li>
-                                <li class="list-group-item  bg-secondary awards">Dapibus ac facilisis in</li>
-                                <li class="list-group-item  bg-secondary awards">Morbi leo risus</li>
-                                <li class="list-group-item  bg-secondary awards">Porta ac consectetur ac</li>
-                                <li class="list-group-item  bg-secondary awards">Vestibulum at eros</li>
-                              </ul>
-                        </div>
-                        <div class = "col-lg-3">
-                            <ul class="list-group list-group-flush ">
-                                <li class="list-group-item  bg-secondary award-headers">2014</li>
-                                <li class="list-group-item  bg-secondary awards">Cras justo odio</li>
-                                <li class="list-group-item  bg-secondary awards">Dapibus ac facilisis in</li>
-                                <li class="list-group-item  bg-secondary awards">Morbi leo risus</li>
-                                <li class="list-group-item  bg-secondary awards">Porta ac consectetur ac</li>
-                                <li class="list-group-item  bg-secondary awards">Vestibulum at eros</li>
-                              </ul>
-                        </div>
-                        
-                    </div>
+                <div class="col-lg-3">
+                    <ul class="list-group list-group-flush ">
+                        <li class="list-group-item  bg-secondary award-headers">2020</li>
+                        <li class="list-group-item  bg-secondary awards">Tommy Colitsas*</li>
+                        <li class="list-group-item  bg-secondary awards">​Varun Nair*</li>
+                        <li class="list-group-item  bg-secondary awards">Naveena Erranki</li>
+                        <li class="list-group-item  bg-secondary awards">Sibhy Rajesh</li>
+                        <li class="list-group-item  bg-secondary awards">Shivani Srivastava</li>
+                        <li class="list-group-item  bg-secondary awards">​Saanika Kulkarni</li>
+                        <li class="list-group-item  bg-secondary awards">​Annabell Su</li>
+                        <li class="list-group-item  bg-secondary awards">Drishti Devnani</li>
+                        <li class="list-group-item  bg-secondary awards">​Larry Jiang</li>
+                    </ul>
                 </div>
-            </section>
-        
-             
+                <div class="col-lg-3">
+                    <ul class="list-group list-group-flush ">
+                        <li class="list-group-item  bg-secondary award-headers">2019</li>
+                        <li class="list-group-item  bg-secondary awards">Joey Hsia*</li>
+                        <li class="list-group-item  bg-secondary awards"> Neel Bhat</li>
+                        <li class="list-group-item  bg-secondary awards">​Maxwell Chen</li>
+                        <li class="list-group-item  bg-secondary awards">Sameer Das</li>
+                        <li class="list-group-item  bg-secondary awards"> Daksh Dua</li>
+                        <li class="list-group-item  bg-secondary awards"> Anne-Charlotte Frotte</li>
+                        <li class="list-group-item  bg-secondary awards"> ​Manish Nagireddy</li>
+                        <li class="list-group-item  bg-secondary awards">​Anjelica Qin</li>
+                        <li class="list-group-item  bg-secondary awards"> Naman Sarda</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="list-group list-group-flush ">
 
-            <!-- Footer -->
-          <section class = "cointainer bg-testGreen py-4 px-5 text-center">
-            <footer class = "footer">
-              Interested? Contact us: 
-               <div class = "pt-4">
-               <a class = "footer-link" href="https://www.instagram.com/southdebate/"><i class="fab fa-instagram fa-3x"></i></a> 
-               &nbsp;  
-               <a  class = "footer-link" href="mailto:southdebate@gmail.com"><i class="far fa-envelope fa-3x"></i></a> 
-            </footer>
-          </footer>
-         </section>
-        <!-- Navbar Script -->
+                        <li class="list-group-item  bg-secondary award-headers">2018</li>
+                        <li class="list-group-item  bg-secondary awards"> Neal Singal*</li>
+                        <li class="list-group-item  bg-secondary awards">Kushagr Bhatia</li>
+                        <li class="list-group-item  bg-secondary awards"> ​Sanjana Marepally</li>
+                        <li class="list-group-item  bg-secondary awards"> ​Pooja Neerumalla</li>
+                        <li class="list-group-item  bg-secondary awards"> Chandler Ochs</li>
+                        <li class="list-group-item  bg-secondary awards"> ​Vishesh Shah</li>
+                        <li class="list-group-item  bg-secondary awards"> Arshia Singhal</li>
+                        <li class="list-group-item  bg-secondary awards"> Shannon Smith</li>
+                        <li class="list-group-item  bg-secondary awards"> Shreyas Srinivasan</li>
+                    </ul>
+                </div>
 
-        <script>
-                let nav = document.querySelector('nav');
-                nav.classList.toggle('short', window.innerWidth > 1000);
-        </script>
+            </div>
+            <div class="row py-5 gy-5 align-items-center">
+                <div class="col-lg-3">
+                    <ul class="list-group list-group-flush ">
+                        <li class="list-group-item  bg-secondary award-headers">2017</li>
+                        <li class="list-group-item  bg-secondary awards">Rishab Bhandari</li>
+                        <li class="list-group-item  bg-secondary awards">Aditya Chugh</li>
+                        <li class="list-group-item  bg-secondary awards">Dev Devnani</li>
+                        <li class="list-group-item  bg-secondary awards"> Tanish Gupta</li>
+                        <li class="list-group-item  bg-secondary awards">Kevin Hudson</li>
+                        <li class="list-group-item  bg-secondary awards"> Aditya Iyer</li>
+                        <li class="list-group-item  bg-secondary awards"> Joice Kim*</li>
+                        <li class="list-group-item  bg-secondary awards"> Pavan Marempud</li>
+                        <li class="list-group-item  bg-secondary awards"> Adirupa Nag</li>
+                        <li class="list-group-item  bg-secondary awards"> Robert Rackmill</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="list-group list-group-flush ">
+                        <li class="list-group-item  bg-secondary award-headers">2016</li>
+                        <li class="list-group-item  bg-secondary awards">Pierre-Antoine Frotte*</li>
+                        <li class="list-group-item  bg-secondary awards">Anisha Amurthur</li>
+                        <li class="list-group-item  bg-secondary awards"> Kunal Gupta</li>
+                        <li class="list-group-item  bg-secondary awards"> Matt Lu</li>
+                        <li class="list-group-item  bg-secondary awards"> Vijay Krishnan</li>
+                        <li class="list-group-item  bg-secondary awards"> Ohyoon Kwon</li>
+                        <li class="list-group-item  bg-secondary awards">Anish Puligilla</li>
+                        <li class="list-group-item  bg-secondary awards"> Aditya Shankar</li>
+                        <li class="list-group-item  bg-secondary awards"> Koushik Tuppil</li>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="list-group list-group-flush ">
+                        <li class="list-group-item  bg-secondary award-headers">2015</li>
+                        <li class="list-group-item  bg-secondary awards">Aashil Desai*</li>
+                        <li class="list-group-item  bg-secondary awards">Aahan Agrawal</li>
+                        <li class="list-group-item  bg-secondary awards">Heman Gandhi </li>
+                        <li class="list-group-item  bg-secondary awards">Tommy Liang </li>
+                        <li class="list-group-item  bg-secondary awards">Anjali Jothi</li>
+                        <li class="list-group-item  bg-secondary awards">Divesh Otwani </li>
+                        <li class="list-group-item  bg-secondary awards">Namankita Rana</li>
+                        <li class="list-group-item  bg-secondary awards">Gargi Sapre</li>
+                        <li class="list-group-item  bg-secondary awards">Maitreyi Sapre</li>
+                        <li class="list-group-item  bg-secondary awards">Jessica Shen</li>
+                        <li class="list-group-item  bg-secondary awards">Kai-Chin Shih</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="list-group list-group-flush ">
+                        <li class="list-group-item  bg-secondary award-headers">2014</li>
+                        <li class="list-group-item  bg-secondary awards"> Sally Jiao*</li>
+                        <li class="list-group-item  bg-secondary awards">Nikhil Ayalla</li>
+                        <li class="list-group-item  bg-secondary awards">Kumail Jaffer</li>
+                        <li class="list-group-item  bg-secondary awards">Devika Kishore</li>
+                        <li class="list-group-item  bg-secondary awards">George Li</li>
+                        <li class="list-group-item  bg-secondary awards">Abhimanyu Muchhal</li>
+                        <li class="list-group-item  bg-secondary awards">Krishna Mukkavill</li>
+                        <li class="list-group-item  bg-secondary awards">Pranay Nadella</li>
+                        <li class="list-group-item  bg-secondary awards">Varsha Prem</li>
+                        <li class="list-group-item  bg-secondary awards">Arnav Sood</li>
+                    </ul>
+                </div>
 
-    </body>
-    
-    <!-- Imported Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+            </div>
+        </div>
+    </section>
 
-    <!-- Custom Scripts -->
-    <script src = "../script.js"></script>
+
+
+    <!-- Footer -->
+    <section class="cointainer bg-testGreen py-4 px-5 text-center">
+        <footer class="footer">
+            Interested? Contact us:
+            <div class="pt-4">
+                <a class="footer-link" href="https://www.instagram.com/southdebate/"><i
+                        class="fab fa-instagram fa-3x"></i></a>
+                &nbsp;
+                <a class="footer-link" href="mailto:southdebate@gmail.com"><i class="far fa-envelope fa-3x"></i></a>
+        </footer>
+        </footer>
+    </section>
+    <!-- Navbar Script -->
+
+    <script>
+        let nav = document.querySelector('nav');
+        nav.classList.toggle('short', window.innerWidth > 1000);
+    </script>
+
+</body>
+
+<!-- Imported Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+<!-- Custom Scripts -->
+<script src="../script.js"></script>
 
 </html>
